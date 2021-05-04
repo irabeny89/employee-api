@@ -1,14 +1,18 @@
 {
   "name": "employee-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API CRUD implementation for an employee listing using a data structure as temporary storage.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["employee, REST, API, Nodejs, express"],
+  "author": "Ernest Irabor",
   "license": "ISC",
+  "engines": {
+    "node": "15.11.0",
+    "npm": "7.6.0"
+  },
   "dependencies": {
     "compression": "^1.7.4",
     "cors": "^2.8.5",
