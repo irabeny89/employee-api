@@ -60,5 +60,5 @@ Content-Type: {{json}}
 ###
 
 # Delete employee data
-DELETE  http://{{host}}/{{apiEmployees}}/{{id1}}
+DELETE http://{{host}}/{{apiEmployees}}/{{id1}}
 ###

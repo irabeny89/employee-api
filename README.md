@@ -20,3 +20,32 @@ Live demo for when the api will be linked with a database.
   - To run the application for development, run ```  nodemon  ```
 3. Open [localhost:3000](http://localhost:3000/) in the browser, Curl, REST Client, PostMan etc
 ---- 
+
+### Endpoints
+#### Get all employees
+GET http://localhost:3000/api/employees
+
+#### Creating an employee
+POST http://localhost:3000/api/employees
+Content-Type: application/json
+
+{
+  "firstName": "{{firstName}}",
+  "lastName": "{{lastName}}",
+  "age": "{{age}}"
+}
+#### Read employee data
+GET http://localhost:3000/api/employees/:employeeId
+
+#### Update employee data
+PUT http://localhost:3000/api/employees/:employeeId
+Content-Type: application/json
+
+{
+  "employeeId": "{{id1}}",
+  "firstName": "{{newFirstName}}",
+  "lastName": "{{newLastName}}"
+}
+
+#### Delete employee data
+DELETE http://localhost:3000/api/employees/:employeeId
