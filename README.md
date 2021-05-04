@@ -2,7 +2,7 @@
 
 An API with CRUD operations for listing employees on a temporary data structure in system memory. The application is flexible and other data persistence methods can be used.
 
-### [Live Demo](http://crudapi-employee.herokuapp.com/ "Employee CRUD API")
+### [Live Demo](http://crudapi-employee.herokuapp.com/api/employees/ "Employee CRUD API")
 
 ####
 Live demo for when the api will be linked with a database.
