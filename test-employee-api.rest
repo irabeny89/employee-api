@@ -1,0 +1,64 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@json = application/json
+@apiEmployees = api/employees
+@id1 = E00001
+@firstName1 = Ernest
+@lastName1 = Irabor
+@age1 = 33
+@id2 = E00002
+@firstName2 = Kazeem
+@lastName2 = Kareem
+@age2 = 28
+
+###
+
+# Get all employees
+http://{{host}}/{{apiEmployees}}
+###
+
+# Creating an employee
+POST http://{{host}}/{{apiEmployees}}
+Content-Type: {{json}}
+
+{
+  "firstName": "{{firstName1}}",
+  "lastName": "{{lastName1}}",
+  "age": "{{age1}}"
+}
+###
+
+# Create another employee
+POST http://{{host}}/{{apiEmployees}}
+Content-Type: {{json}}
+
+{
+  "firstName": "{{firstName2}}",
+  "lastName": "{{lastName2}}",
+  "age": "{{age2}}"
+}
+###
+
+# Read employee data
+GET http://{{host}}/{{apiEmployees}}/{{id1}}
+###
+
+# Read another employee data
+GET  http://{{host}}/{{apiEmployees}}/{{id2}}
+###
+
+# Update employee data
+PUT http://{{host}}/{{apiEmployees}}/{{id1}}
+Content-Type: {{json}}
+
+{
+  "employeeId": "{{id1}}",
+  "firstName": "Eny",
+  "lastName": "Irabor"
+}
+###
+
+# Delete employee data
+DELETE  http://{{host}}/{{apiEmployees}}/{{id1}}
+###
