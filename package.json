@@ -4,7 +4,8 @@
   "description": "API CRUD implementation for an employee listing using a data structure as temporary storage.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
   },
   "keywords": ["employee, REST, API, Nodejs, express"],
   "author": "Ernest Irabor",
