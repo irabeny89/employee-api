@@ -15,7 +15,7 @@ module.exports = () => `<!DOCTYPE html>
   <h3><u>All Employees</u></h3>
   <ul>
     <li>
-      <code>GET ${host}/api/employees</code>
+      <code>GET ${host}api/employees</code>
     </li>
   </ul>
   <h3><u>Create an Employee</u></h3>
@@ -23,7 +23,7 @@ module.exports = () => `<!DOCTYPE html>
     <li>
       <code>
         <pre>
-          POST ${host}/api/employees
+          POST ${host}api/employees
           Content-Type: application/json
 
           {
@@ -38,7 +38,7 @@ module.exports = () => `<!DOCTYPE html>
   <h3><u>Read Employee Data</u></h3>
   <ul>
     <li>
-      <code>GET ${host}/api/employees/:employeeId</code>
+      <code>GET ${host}api/employees/:employeeId</code>
     </li>
   </ul>
   <h3><u>Update Employee Data</u></h3>
@@ -46,7 +46,7 @@ module.exports = () => `<!DOCTYPE html>
     <li>
       <code>
         <pre>
-          PUT ${host}/api/employees/:employeeId
+          PUT ${host}api/employees/:employeeId
           Content-Type: application/json
           
           {
@@ -61,7 +61,7 @@ module.exports = () => `<!DOCTYPE html>
   <h3><u>Delete an Employee Data</u></h3>
   <ul>
     <li>
-      <code>DELETE ${host}/api/employees/:employeeId</code>
+      <code>DELETE ${host}api/employees/:employeeId</code>
     </li>
   </ul>
 </body>
