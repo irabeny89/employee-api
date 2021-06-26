@@ -1,5 +1,5 @@
+require('dotenv').config()
 const app = require('./express')
+const { port, host } = require('./config')
 
-const port = process.env.PORT || 3000
-
-app.listen(port, () => console.log("server listening on port %s", port)) 
+app.listen(port, () => console.log("server up: %s", host))
